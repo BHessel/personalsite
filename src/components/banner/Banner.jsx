@@ -2,9 +2,12 @@ import React from "react";
 import "./banner.scss";
 import { Skateboarding, Email } from "@mui/icons-material";
 
-const Banner = () => {
+const Banner = (props) => {
+  
+  const { burgerOpen, setBurgerOpen } = props;
+
   return (
-    <div className="banner">
+    <div className={"banner" + `${burgerOpen ? " active" : ""}`}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -20,7 +23,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="right">
-          <div className='hamburger'>
+          <div className='hamburger' onClick={() => setBurgerOpen(!burgerOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
