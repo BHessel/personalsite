@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Banner burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
-      <Menu />
+      <Menu burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>
       <div className="sections">
         <Intro />
         <Portfolio />

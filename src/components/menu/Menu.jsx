@@ -1,16 +1,22 @@
 import React from 'react';
 import './menu.scss';
 
-const Menu = () => {
+const Menu = (props) => {
+    
+    const { burgerOpen, setBurgerOpen } = props
+
     const menuItems = ["Home", "Portfolio", "Works", "Testimonials", "Contact"];
     
     return (
-        <div className="menu">
+        <div className={"menu" + `${burgerOpen ? " active" : ""}`}>
             <ul>
                 {menuItems.map((item, index) => {
                     return (
-                        <li key={index}>
-                            <a href={`#${item}`}>{item}</a>
+                        <li 
+                            key={index}
+                            onClick={() => setBurgerOpen(!burgerOpen)}
+                        >
+                            <a href={`#${item.toLowerCase()}`}>{item}</a>
                         </li>
                     )
                 })}
