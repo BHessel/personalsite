@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
 import "./app.scss";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Banner burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
+      <Menu />
       <div className="sections">
         <Intro />
         <Portfolio />
