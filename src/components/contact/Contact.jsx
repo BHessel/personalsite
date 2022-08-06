@@ -3,8 +3,8 @@ import './contact.scss'
 
 const Contact = () => {
     return (
-        <div className='contact'>
-            asdf
+        <div className='contact' id='contact'>
+            contact
         </div>
     );
 }
