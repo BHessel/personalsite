@@ -9,16 +9,15 @@ import Typewriter from "typewriter-effect/dist/core";
 
 const Intro = () => {
   const typedRef = useRef(null);
+  const eyeEmoji = "\u{1F440}";
 
   useEffect(() => {
     const writer = new Typewriter(typedRef.current, {
-        strings: ["Developer", "Dog Dad", "asdfsd"],
+        strings: ["Software Engineer", "Web Designer", "Your next hire..?" + "  " + eyeEmoji],
         autoStart: true,
         loop: true,
-        pauseFor: 1500
+        pauseFor: 1800
     })
-
-    // writer.stop()
     }, []);
 
   return (
@@ -32,8 +31,8 @@ const Intro = () => {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Ben</h1>
-          <h3>
-            Software <span ref={typedRef}></span>
+          <h3 ref={typedRef}>
+            
           </h3>
         </div>
         <a href="#portfolio">
