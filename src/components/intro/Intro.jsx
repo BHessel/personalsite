@@ -13,7 +13,7 @@ const Intro = () => {
 
   useEffect(() => {
     const writer = new Typewriter(typedRef.current, {
-        strings: ["Software Engineer", "Web Designer", "Your next hire..?" + "  " + eyeEmoji],
+        strings: ["Software Engineer", "Web Designer", "Your next hire...?" + "  " + eyeEmoji],
         autoStart: true,
         loop: true,
         pauseFor: 1800
