@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./portfolio.scss";
 import NetflixMatcher from "../../images/netflixmmlogo.png";
+import PortfolioData from './PortfolioData'
 
 const Portfolio = () => {
   const [active, setActive] = useState("Featured");
@@ -8,9 +9,8 @@ const Portfolio = () => {
   const portfolioItems = [
     "Featured",
     "Web App",
-    "Mobile App",
-    "Design",
-    "Branding",
+    "Blogs",
+    "Current Areas of Study"
   ];
 
 
