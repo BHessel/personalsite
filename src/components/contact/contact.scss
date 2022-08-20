@@ -4,16 +4,17 @@
   background-color: lightblue;
   display: flex;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
-}
+  }
 
   .left {
     flex: 1;
     overflow: hidden;
 
     img {
-      height: 100%;
+      margin-top: 100px;
+      height: 60%;
     }
   }
   .right {
@@ -40,10 +41,10 @@
         height: 30px;
         font-size: 14px;
 
-        @include mobile{
-            margin-top: 5px;
-            width: 225px;
-            height: 22.5px;
+        @include mobile {
+          margin-top: 5px;
+          width: 225px;
+          height: 22.5px;
         }
       }
 
@@ -53,10 +54,10 @@
         font-size: 14px;
         margin: 20px;
 
-        @include mobile{
-            width: 225px;
-            height: 125px;
-            margin: 12.5px;
+        @include mobile {
+          width: 225px;
+          height: 125px;
+          margin: 12.5px;
         }
       }
 
