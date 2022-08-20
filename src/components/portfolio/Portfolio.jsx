@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./portfolio.scss";
-import { WebAppData, BlogData } from "./PortfolioData";
 import {
   featuredPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolo,
+  blogData,
+  currentStudy,
   webPortfolio,
 } from "../../data";
 
@@ -16,10 +14,10 @@ const Portfolio = () => {
   const portfolioItems = [
     { id: "featured", title: "Featured" },
     { id: "web", title: "Web Apps" },
-    { id: "mobile", title: "Blogs" },
-    { id: "design", title: "Current Areas of Study" },
-    { id: "content", title: "Current Areas of Study" },
+    { id: "blogs", title: "Blogs" },
+    { id: "current", title: "Current Areas of Study" },
   ];
+
 
   useEffect(() => {
     switch (active) {
@@ -29,19 +27,17 @@ const Portfolio = () => {
       case "web":
         setView(webPortfolio);
         break;
-      case "mobile":
-        setView(mobilePortfolio);
+      case "blogs":
+        setView(blogData);
         break;
-      case "design":
-        setView(designPortfolio);
+      case "current":
+        setView(currentStudy);
         break;
       default:
         setView(featuredPortfolio);
     }
   }, [active]);
 
-
-  console.log(portfolioItems);
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
