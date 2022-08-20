@@ -18,7 +18,6 @@ const Portfolio = () => {
     { id: "current", title: "Current Areas of Study" },
   ];
 
-
   useEffect(() => {
     switch (active) {
       case "featured":

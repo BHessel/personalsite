@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./works.scss";
-import cell from "../../images/mobile.png";
 import dog from "../../images/dog.jpg";
+import sleepyDog from '../../images/sleepyDog.jpeg'
+import snowboarding from '../../images/snowboarding.jpeg'
 import arrow from "../../images/arrow.png";
 
 const Works = () => {
@@ -9,25 +10,25 @@ const Works = () => {
 
   const slides = [
     {
-      id: "1",
-      icon: "../../images/mobile.png",
-      title: "Web Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      id: 1,
+      // icon: "../../images/mobile.png",
+      title: "Hi, I'm Ben",
+      desc: "I'm making this career change coming from a decade in sales and entrepreneurship...",
+      img: dog,
     },
     {
-      id: "2",
-      icon: "../../images/globe.png",
-      title: "Mobile Application",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      id: 2,
+      // icon: "../../images/globe.png",
+      title: "I'm always looking to grow",
+      desc: "I chose to switch into software engineering becuase I've always been interested in learning to code, I wanted a career that kept me more mentally engaged, and one where I could constantly learn new things",
+      img: snowboarding,
     },
     {
-      id: "3",
-      icon: "../../images/writing.png",
-      title: "Branding",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      id: 3,
+      // icon: "../../images/writing.png",
+      title: "Some hobbies outside of work include...",
+      desc: "Working out, traveling, skateboarding, snowboarding, reading, and giving the dog belly rubs.",
+      img: sleepyDog,
     },
   ];
 
@@ -52,18 +53,18 @@ const Works = () => {
             <div className="item">
               <div className="left">
                 <div className="left-content">
-                  <div className="img-container">
+                  {/* <div className="img-container">
                     <img src={slide.icon} alt="" />
-                  </div>
+                  </div> */}
                   <h2>{slide.title}</h2>
                   <p>{slide.desc}</p>
-                  <span>Projects</span>
+                  <span>More => </span>
                 </div>
               </div>
               <div className="right">
                 <div className="right-content">
                   <div className="img-container">
-                    <img src={dog} alt="" />
+                    <img src={slide.img} alt="" />
                   </div>
                 </div>
               </div>
