@@ -56,12 +56,14 @@ const Portfolio = () => {
 
       <div className="container">
         {view.map((viewItem, index) => (
-          <div key={index} className="item">
-            <img src={viewItem.img} alt="" />
-            <h3>{viewItem.title}</h3>
-          </div>
+          <a href={viewItem.link} target="_blank">
+            <div key={index} className="item">
+              <img src={viewItem.img} alt="" />
+              <h3>{viewItem.title}</h3>
+            </div>
+          </a>
         ))}
-        </div>
+      </div>
     </div>
   );
 };

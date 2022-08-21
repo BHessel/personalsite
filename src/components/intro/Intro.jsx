@@ -1,12 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./intro.scss";
-// import Man from "../../images/man.png"
-// import Ben from "../../images/tinywow_remove_bg_4146027.png"
-import Sitting from '../../images/sitting.JPG'
-import Ben2 from "../../images/benNoBG.png";
 import Ben3 from "../../images/pfp2copy.jpg";
 import downArrow from "../../images/down.png";
-// import { init } from "ityped";
 import Typewriter from "typewriter-effect/dist/core";
 
 const Intro = () => {
