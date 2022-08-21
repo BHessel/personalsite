@@ -3,12 +3,13 @@ import "./contact.scss";
 import shake from "../../images/shake.svg";
 
 const Contact = () => {
+  const [message, setMessage] = useState(false);
 
-    const [ message, setMessage ] = useState(false)
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true)
+    setMessage(true);
   };
+  
   return (
     <div className="contact" id="contact">
       <div className="left">
