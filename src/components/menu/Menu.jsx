@@ -4,7 +4,7 @@ import "./menu.scss";
 const Menu = (props) => {
   const { burgerOpen, setBurgerOpen } = props;
 
-  const menuItems = ["Intro", "Portfolio", "Works", "Contact"];
+  const menuItems = ["Intro", "Portfolio", "About", "Contact"];
 
   return (
     <div className={"menu" + `${burgerOpen ? " active" : ""}`}>

@@ -5,6 +5,7 @@ import {
   blogData,
   currentStudy,
   webPortfolio,
+  
 } from "../../data";
 
 const Portfolio = () => {

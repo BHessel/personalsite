@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./works.scss";
+import "./about.scss";
 import dog from "../../images/dog.jpg";
-import sleepyDog from '../../images/sleepyDog.jpeg'
-import snowboarding from '../../images/snowboarding.jpeg'
+import sleepyDog from "../../images/sleepyDog.jpeg";
+import snowboarding from "../../images/snowboarding.jpeg";
 import arrow from "../../images/arrow.png";
 
-const Works = () => {
+const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -43,7 +43,7 @@ const Works = () => {
   };
 
   return (
-    <div className="works" id="works">
+    <div className="works" id="about">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -58,7 +58,7 @@ const Works = () => {
                   </div> */}
                   <h2>{slide.title}</h2>
                   <p>{slide.desc}</p>
-                  <span>More => </span>
+                  {/* <span>More => </span> */}
                 </div>
               </div>
               <div className="right">
@@ -88,4 +88,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default About;
