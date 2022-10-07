@@ -8,6 +8,7 @@ import jest from './images/jest.png';
 import ts from './images/ts.png';
 import algo from './images/algo.jpeg';
 import OpenAI from "./images/openAI.jpeg";
+import Flexbox from "./images/flex.png"
 
 export const featuredPortfolio = [
   {
@@ -52,6 +53,12 @@ export const featuredPortfolio = [
     img: Grid,
     link: "https://benlearnstocode.medium.com/an-intro-to-css-grid-595f19fa7f75",
   },
+  {
+    id: 8,
+    title: "Fun with Flexbox",
+    img: Flexbox,
+    link: "https://benlearnstocode.medium.com/fun-with-flexbox-ffcde1a25d4"
+  }
 ];
 
 export const webPortfolio = [
@@ -100,6 +107,12 @@ export const blogData = [
     img: Grid,
     link: "https://benlearnstocode.medium.com/an-intro-to-css-grid-595f19fa7f75",
   },
+  {
+    id: 5,
+    title: "Fun with Flexbox",
+    img: Flexbox,
+    link: "https://benlearnstocode.medium.com/fun-with-flexbox-ffcde1a25d4"
+  }
 ];
 
 export const currentStudy = [
